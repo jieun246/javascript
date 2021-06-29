@@ -48,3 +48,17 @@
         console.log(a+b); 
     }
 }
+
+7. Return 
+- function을 실행하고 나서 반환값(함수 결과) 리턴
+- function은 return을 하면 실행 끝 
+- console은 단순히 console에서만 보여주는 것뿐, 실질적으로 값을 저장하거나 화면에 출력X 
+
+8. Conditionals 
+- if ~ else문을 이용하여 조건에 따라 결과값을 다르게 나오게 함 
+* prompt : 사용자가 answer를 줄때까지 js가 작동안하고 기다림. 오래된 함수로 요즘에는 잘 쓰지는 않음
+* typeof : 데이터 타입 확인 
+* parseInt : integer로 형변환. 단 숫자만 가능 
+* isNaN() : NaN인지 아닌지를 구별하는 함수 
+- && : AND, || : OR 
+
