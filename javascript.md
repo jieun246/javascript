@@ -62,3 +62,20 @@
 * isNaN() : NaN인지 아닌지를 구별하는 함수 
 - && : AND, || : OR 
 
+9. javascript on the brwoser Document
+- document : 브라우저에 이미 존재하는 object(html을 가리키는 객체). js에서 접근하고 읽고 쓸 수 있음 예) document.title, document.title = "Hi" 
+             브라우저가 html정보가 아주 많이 들어 있는 document라는 object를 전달 
+* console.dir(document) : html 객체 읽기 >> 많은 object들이 존재
+- searching element : getElementByClassName 등을 이용하여 html의 element를 찾을 수 있음
+  getElementById : string형태로 해당 아이디의 element. 값이 여러개 있는 경우, 첫번째꺼만 받아옴
+  getElementByClassName : 해당 class의 element. 여러개 있는 경우, array 형태로 받아옴  
+  getElementByTagName : 해당 tag의 element. 여러개 있는 경우, array 형태로 받아옴  
+  querySelector : element를 css 방식으로 검색. 여러개 있는 경우, 첫번째꺼만 받아옴. id나 class가 불분명할 때는 querySelector를 이용 
+  querySelectorAll : selector안의 조건에 부합하는 모든 element를 가져옴  
+- event : addEventListner를 이용하여 click 등의 이벤트가 발생할 시 후처리(자동) 예) element의 style 변경 
+  title.addEventListener("click", handleTitleClick) >> 첫번째 arg : 이벤트 명시, 두번째 arg : event가 발생하면 호출할 function 전달(function만 넘겨주고 실행X(괄호 입력X))
+  다양한 event : window의 resize, copy, offline, online(wifi) 등이 있음 [이벤트 상세](https://developer.mozilla.org/ko/docs/Web/API/Event)
+* document가 html이 app.js를 load하기 때문에 존재. 그 다음에 browser가 document에 접근 
+- js에서 css 처리 가능하나, style에서 css 처리하는 게 나음 
+  classNme : 클래스명 변경. 클래스가 변경되기 때문에 기존에 있던 클래스가 사라짐. getter,setter
+  classList : 클래스를 목록처럼 관리. 클래스를 추가하거나 삭제할 경우, classList이용하는 게 나음 [classList](https://developer.mozilla.org/ko/docs/Web/API/Element/classList)
