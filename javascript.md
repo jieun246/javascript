@@ -70,7 +70,7 @@
   getElementById : string형태로 해당 아이디의 element. 값이 여러개 있는 경우, 첫번째꺼만 받아옴
   getElementByClassName : 해당 class의 element. 여러개 있는 경우, array 형태로 받아옴  
   getElementByTagName : 해당 tag의 element. 여러개 있는 경우, array 형태로 받아옴  
-  querySelector : element를 css 방식으로 검색. 여러개 있는 경우, 첫번째꺼만 받아옴. id나 class가 불분명할 때는 querySelector를 이용 
+  querySelector : element를 css 방식으로 검색. 여러개 있는 경우, 첫번째꺼만 받아옴. id나 class가 불분명할 때는 querySelector를 이용  >> classname, tagname 모두 검색 가능하므로 id인지 class인지를 명확히 구분해서 넣을 것 
   querySelectorAll : selector안의 조건에 부합하는 모든 element를 가져옴  
 - event : addEventListner를 이용하여 click 등의 이벤트가 발생할 시 후처리(자동) 예) element의 style 변경 
   title.addEventListener("click", handleTitleClick) >> 첫번째 arg : 이벤트 명시, 두번째 arg : event가 발생하면 호출할 function 전달(function만 넘겨주고 실행X(괄호 입력X))
@@ -79,3 +79,7 @@
 - js에서 css 처리 가능하나, style에서 css 처리하는 게 나음 
   classNme : 클래스명 변경. 클래스가 변경되기 때문에 기존에 있던 클래스가 사라짐. getter,setter
   classList : 클래스를 목록처럼 관리. 클래스를 추가하거나 삭제할 경우, classList이용하는 게 나음 [classList](https://developer.mozilla.org/ko/docs/Web/API/Element/classList)
+
+  10. 로그인 실습 
+  - form : js에서 따로 설정하지 않고도 html에서 input 등에 속성을 설정하면 유효성 검사 가능 예) <input required maxlength="15" type="text" placeholder="What is your name?" />
+          button이나 submit 타입들은 항상 submit >> submit을 원치 않을 경우, 새로고침되는 문제 발생
