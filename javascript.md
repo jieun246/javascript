@@ -127,7 +127,6 @@
 
                  인자 : fucntion, seconds를 받음 예) setTimeout(sayHello, 5000)
 - Date() : 현재 날짜, 시간, 분, 초에 대한 정보를 가지고 있으며, object를 선언하여 현재 날짜와 시간에 대한 정보를 가져올 수 있음
-
            예) ```
            const date = new Date();
            const hours = String(date.getHours()).padStart(2, "0"); 
