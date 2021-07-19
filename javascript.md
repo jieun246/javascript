@@ -118,7 +118,6 @@
                  localStorage.removeItem(key) : Delete 
 
 * Application에 localStorage, Cookies 등 다양한 저장소가 존재    
-
 11. Clock 실습 
 - setInterval() : 매n초마다 이벤트 실행 
 
@@ -136,3 +135,14 @@
                인자 : length, 문자를 받아 length가 충족하지 못하면 문자를 붙임 예) "1".padStart(2, "0"); 
 
                <> padEnd() : padStart와 비슷한 함수로, length를 충족하지 못하면 끝에 문자를 붙임 
+12. Quotes & Background 실습 
+- random() : 랜덤숫자를 가져오는 함수로 기본적으로 0,1 사이의 숫자를 가져옴
+
+             지정된 숫자 사이에 가져오려면 Math.random()*n 
+- round() : 반올림 
+- ceil() : 올림
+- floor() : 버림 
+* Math module : 자바스크립트에서 기본적으로 Math에 관련된 함수 제공 
+- document.createElement() : html element 생성 
+- appendChild() : body 끝에 html 추가 <> prepend()
+
