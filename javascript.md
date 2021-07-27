@@ -16,7 +16,7 @@
 - const : 상수로 값이 변경X 
 - let : 변수로 중간에 변경 가능 
 - var : 규칙이 없기 때문에 업데이트가 가능한지 인식되는지 알 수 없음(=상수인지 변수인지를 인식X)
-- var와 다른 점 : block scope, dead zone 
+- var와 다른 점 : block scope, dead zone <br>
 ✔ 기본적으로 const를 쓰고 필요할 때만 let을 쓰되, var은 쓰지 말 것
 
 4. Arrays 
@@ -57,11 +57,11 @@
 - console은 단순히 console에서만 보여주는 것뿐, 실질적으로 값을 저장하거나 화면에 출력X 
 
 8. Conditionals 
-- if ~ else문을 이용하여 조건에 따라 결과값을 다르게 나오게 함 
-✔ prompt : 사용자가 answer를 줄때까지 js가 작동안하고 기다림. 오래된 함수로 요즘에는 잘 쓰지는 않음
-✔ typeof : 데이터 타입 확인 
-✔ parseInt : integer로 형변환. 단 숫자만 가능 
-✔ isNaN() : NaN인지 아닌지를 구별하는 함수 
+- if ~ else문을 이용하여 조건에 따라 결과값을 다르게 나오게 함 <br>
+✔ prompt : 사용자가 answer를 줄때까지 js가 작동안하고 기다림. 오래된 함수로 요즘에는 잘 쓰지는 않음<br>
+✔ typeof : 데이터 타입 확인<br> 
+✔ parseInt : integer로 형변환. 단 숫자만 가능 <br>
+✔ isNaN() : NaN인지 아닌지를 구별하는 함수 <br>
 - && : AND, || : OR 
 
 9. javascript on the brwoser Document
@@ -86,7 +86,7 @@
 
   title.addEventListener("click", handleTitleClick) >> 첫번째 arg : 이벤트 명시, 두번째 arg : event가 발생하면 호출할 function 전달(function만 넘겨주고 실행X(괄호 입력X))
 
-  다양한 event : window의 resize, copy, offline, online(wifi) 등이 있음 [이벤트 상세](https://developer.mozilla.org/ko/docs/Web/API/Event)
+  다양한 event : window의 resize, copy, offline, online(wifi) 등이 있음 [이벤트 상세](https://developer.mozilla.org/ko/docs/Web/API/Event)<br>
 ✔ document가 html이 app.js를 load하기 때문에 존재. 그 다음에 browser가 document에 접근 
 - js에서 css 처리 가능하나, style에서 css 처리하는 게 나음 
 
@@ -117,7 +117,7 @@
 
                  localStorage.removeItem(key) : Delete 
 
-✔ Application에 localStorage, Cookies 등 다양한 저장소가 존재    
+✔ Application에 localStorage, Cookies 등 다양한 저장소가 존재 
 11. Clock 실습 
 - setInterval() : 매n초마다 이벤트 실행 
 
@@ -153,9 +153,11 @@
               이벤트를 처리한다고 해서 정확히 어떤 버튼을 클릭했는지 알 수 없기 때문에 e.target.parentElement을 이용하여 버튼의 부모를 파악 후 삭제
 ✔ 자바스크립트에서는 function의 첫번째 인자에 유저가 한 이벤트에 대한 정보를 보내기 때문에 이걸 이용하여 정확한 위치 파악 가능               
 - target : html에서 클릭된 element 
-- parentElement or parentNode : 이벤트의 부모 
-✔ 모든 element에는 하나 이상의 property가 있음  
-✔ console.log(event) : path 
+- parentElement or parentNode : 이벤트의 부모 <br>
+✔ 모든 element에는 하나 이상의 property가 있음  <br>
+✔ console.log(event) : path <br>
 ✔ console.log(event.dir) : parentNode, parentElement 
+-JSON.stringify : javascript object or array or code건 간에 string으로 변환<br>
+✔ localStorage : 텍스트 형태로만 저장됨(array 저장X) 
 
               
