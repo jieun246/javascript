@@ -117,7 +117,7 @@
 
                  localStorage.removeItem(key) : Delete 
 
-✔ Application에 localStorage, Cookies 등 다양한 저장소가 존재 
+✔ Application에 localStorage, Cookies 등 다양한 저장소가 존재 <br>
 11. Clock 실습 
 - setInterval() : 매n초마다 이벤트 실행 
 
@@ -141,7 +141,7 @@
              지정된 숫자 사이에 가져오려면 Math.random()*n 
 - round() : 반올림 
 - ceil() : 올림
-- floor() : 버림 
+- floor() : 버림 <br>
 ✔ Math module : 자바스크립트에서 기본적으로 Math에 관련된 함수 제공 
 - document.createElement() : html element 생성 
 - appendChild() : body 끝에 html 추가 <> prepend()
@@ -156,8 +156,14 @@
 - parentElement or parentNode : 이벤트의 부모 <br>
 ✔ 모든 element에는 하나 이상의 property가 있음  <br>
 ✔ console.log(event) : path <br>
-✔ console.log(event.dir) : parentNode, parentElement 
+✔ console.log(event.dir) : parentNode, parentElement <br>
 -JSON.stringify : javascript object or array or code건 간에 string으로 변환<br>
-✔ localStorage : 텍스트 형태로만 저장됨(array 저장X) 
+✔ localStorage : 텍스트 형태로만 저장됨(array 저장X) <br>
+-JSON.parse : javascript의 살아 있는 object로 변환
+예)  const parsedToDos = JSON.parse("[1,2,3]"); // array으로 변환 
+- forEach : array의 각 item에 대해 function을 실행 
 
+            item에 array의 요소에 대한 정보가 들어있어 이걸 통해 배열의 값들을 알 수 있음(순차접근)
+
+✔ arrow function === 단순 function (es6)
               
