@@ -165,5 +165,13 @@
 
             item에 array의 요소에 대한 정보가 들어있어 이걸 통해 배열의 값들을 알 수 있음(순차접근)
 
-✔ arrow function === 단순 function (es6)
+            paintToDo 함수에 array의 요소값을 전달(=== 일일이 요소값을 전달할 필요X)
+✔ arrow function === 단순 function (es6) <br>
+- localStorage의 문제점 : 기존의 값들을 유지하지 못하고 새값으로 덮어쓰워짐.(toDos 배열이 항상 리프레쉬될 때마다 초기화 되기 때문) > toDos를 let으로 변수 선언하고, localStorage에 값이 있으면 배열을 저장  
+- Date.now() : 밀리초를 주는 함수 
+- 그 전에는 단순히 text로만 저장했기 때문에 중복으로 입력했을 경우에 어떤 값이 지워졌는지를 알 수 X > object 형태로 만듬으로써 id를 키값으로 저장하고 그 키 값을 li의 id에 부여(어떤 값을 삭제하려고 했는지를 알 수 있음 )
+- filter : forEach처럼 각 배열의 요소들을 순차 접근하여 조건문이 true이면 값 유지, false면 값 유지 X 
+예) check(item) {return item !== 3};  
+[1,2,3,4].filter(check()); >> 3이 아닌 것만 반환 
+              
               
