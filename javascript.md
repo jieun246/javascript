@@ -173,5 +173,10 @@
 - filter : forEach처럼 각 배열의 요소들을 순차 접근하여 조건문이 true이면 값 유지, false면 값 유지 X 
 예) check(item) {return item !== 3};  
 [1,2,3,4].filter(check()); >> 3이 아닌 것만 반환 
+
+14. Weather 실습 
+- navigator, geolocation을 이용하여 날짜를 가져욤
+- getCurrentPosition : 인자값을 2개를 받음. 
+하나는 성공할때, 나머지 하나는 실패할때의 함수를 받음 >> 자바스크립트가 GeolocationPosition object를 주기 때문에 유저의 위치를 얻어옴. 
               
               
