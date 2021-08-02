@@ -178,5 +178,8 @@
 - navigator, geolocation을 이용하여 날짜를 가져욤
 - getCurrentPosition : 인자값을 2개를 받음. 
 하나는 성공할때, 나머지 하나는 실패할때의 함수를 받음 >> 자바스크립트가 GeolocationPosition object를 주기 때문에 유저의 위치를 얻어옴. 
+- api : 다른 서버와 접속하여 데이터 송수신 
+- fetch : url 연결 > then으로 response 받기(=promise) 비동기 함수
+
               
               
